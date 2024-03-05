@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="mycanvas" width="500px" height="500px" 
+    style="border:1px solid #000000;">
+    </canvas>
+
+    <script>
+        const canvas = document.getElementById("mycanvas");
+        const ctx = canvas.getContext("2d");
+
+
+        //ini untuk kotak
+        // ctx.fillStyle = "#FF0000";
+        // ctx.fillRect(70, 25, 50, 50);
+
+        // ctx.moveTo(2, 80);
+        // ctx.lineTo(2000, 74);
+        // ctx.stroke();
+        // ctx.strokeStyle= "blue";
+        // ctx.lineCap = "round";
+        // ctx.lineWidth = "10";
+
+        // ctx.moveTo(2, 20);
+        // ctx.lineTo(2000,31 );
+        // ctx.stroke();
+
+
+
+        //untuk lingkaran
+        // ctx.beginPath();
+        // ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        // ctx.strokeStyle= "red";
+        // ctx.stroke();
+       
+
+        ctx.beginPath();
+        ctx.moveTo(90,20);
+        ctx.lineTo(50,40);
+        ctx.lineTo(90, 50);
+        // ctx.lineTo(00,20);
+        // ctx.lineTo(100,20);
+        // ctx.lineTo(100,20);
+        // ctx.lineTo(2,90);
+        ctx.stroke();
+
+        
+    </script>
+</body>
+</html>
